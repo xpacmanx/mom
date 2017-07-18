@@ -1,0 +1,56 @@
+/* Дефолтные стили */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-size-adjust: none;
+  line-height:1em;
+}
+
+/* Формы */
+input, textarea, button {
+  outline: none;
+  font-family: $roboto;
+}
+button {
+  appereance:none;
+  cursor:pointer
+}
+
+/* Аккуратные таблицы */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Основные стили */
+html {
+  background: rgba(255, 255, 255, 1);
+}
+html {
+  min-height:100%;
+  height:100%;
+}
+body {
+  font-family:$ptsans;
+  font-size:16px;
+  line-height:1.5em;
+  min-height:100%;
+  transition:background .5s ease-in-out;
+}
+
+.wrapper {
+  position:relative;
+  width:980px;
+  margin:0 auto;
+
+  @media (--medium) {
+    width:960px;
+  }
+  @media (--tablet) {
+    width:700px;
+  }
+  @media (--phone) {
+    width:100%;
+  }
+}

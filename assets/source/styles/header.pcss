@@ -1,0 +1,52 @@
+.header {
+    background:rgba(0,0,0,.5);
+    position:absolute;
+    left:0;
+    right:0;
+
+    &:after {
+        content:'';
+        display:block;
+        clear:both;
+    }
+
+    .logo {
+        background:#6B0B6C;
+        float:left;
+        color:#fff;
+        width:165px;
+        text-transform:uppercase;
+        font-weight:600;
+        padding:10px 20px;
+        font-size:1.5em;
+
+        span {
+            display:block;
+            font-size:0.7em;
+        }
+    }
+
+    .menu {
+        float:left;
+
+        ul {
+            list-style:none;
+            margin-left:10px;
+
+            li {
+                float:left;
+                padding:22px 0;
+
+                    a {
+                        color:#fff;
+                        text-decoration:none;
+                        padding:20px;
+
+                        &:link {text-decoration:none;}
+                        &:active {text-decoration:none;}
+                        &:visited {text-decoration:none;}
+                    }
+            }
+        }
+    }
+}
